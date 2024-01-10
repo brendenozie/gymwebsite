@@ -217,8 +217,8 @@ const Banner = ({  }: Props) => {
                                         loader={loaderProp}
                                         className="w-12"
                                       />
-                        <div className="flex flex-col justify-between">
-                          <span className="text-[#9c9c9c]">Calories burned</span>
+                        <div className="flex flex-col">
+                          <span className="text-[#9c9c9c] text-2xl">Calories burned</span>
                           <span className="text-white text-2xl">220 kcal</span>
                         </div>
         </motion.div>

@@ -21,6 +21,9 @@ import traveldisc from "../../public/get-inspired1200x600.jpg";
 import MainLayout from "@/components/MainLayout";
 import OurPrograms from "@/components/ourprograms";
 import Join from "@/components/Join";
+import Reasons from "@/components/Reasons";
+import Plans from "@/components/Plans";
+import Testimonials from "@/components/Testimonials";
 
 type Props = {
   citiesData: {results:ICity[]};
@@ -66,6 +69,8 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
 
   return (
     <MainLayout>
+
+        <main className="max-w-full mx-auto px-8 sm:px-16">
         
         {/* Banner */}
         <Banner
@@ -76,7 +81,14 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
 
         <OurPrograms/>
 
+        <Reasons/>
+        
+        <Plans/>
+
+        <Testimonials/>
+
         <Join/>
+        
         {/* <Desc
           getInspiredCities={citiesData}
           searchInput={searchInput}
@@ -86,7 +98,7 @@ const Home = ({ citiesData, stylesData, getInspiredCities }: Props) => {
           isOpen={isOpen}
           setIsOpen={setIsOpen} /> */}
 
-        <main className="max-w-full mx-auto px-8 sm:px-16">
+
           <section className="pt-6">
             <div className="max-w-2xl mx-auto mt-16 mb-16 text-center" id="destinations">
               <span className="font-bold tracking-wider uppercase dark:text-violet-400  items-center justify-items-center "></span>

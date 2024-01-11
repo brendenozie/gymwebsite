@@ -7,18 +7,18 @@ const Footer = () => {
   return (
     <div className="relative;">
       <hr className="rounded-sm var(--lightgray);"/>
-      <div className="p-x-[1rem] p-y-[2rem]
+      <div className="px-4 py-8
                         flex
                         flex-col
-                        gap-[4rem]
+                        gap-16
                         items-center
                         justify-center
                         h-[20rem]">
         <div className="flex
-                          gap-[4rem]">
-          <img src={Github.src}  className="w-[2rem] h-[2rem] cursor-pointer" alt="" />
-          <img src={Instagram.src}  className="w-[2rem] h-[2rem] cursor-pointer" alt="" />
-          <img src={LinkedIn.src}  className="w-[2rem] h-[2rem] cursor-pointer" alt="" />
+                          gap-16">
+          <img src={Github.src}  className="w-8 h-8 cursor-pointer" alt="" />
+          <img src={Instagram.src}  className="w-8 h-8 cursor-pointer" alt="" />
+          <img src={LinkedIn.src}  className="w-8 h-8 cursor-pointer" alt="" />
         </div>
         <div className="w-[10rem]">
             <img src={Logo.src} alt="" />
@@ -31,7 +31,7 @@ const Footer = () => {
                             right-[15%]
                             w-[26rem]
                             h-[12rem]
-                            filter: blur(200px);
+                            filter: blur(200px)
                             bg-red;"></div>
       <div className="blur bottom-0
                             right-[15%]

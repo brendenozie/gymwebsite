@@ -22,50 +22,33 @@ const Join = () => {
         // )
     }
   return (
-   <div className="p-4
-                    flex
-                    /* justify-content: spac; */
-                    gap-40"
-                     id='join-us'>
+   <div className="!mt-16 p-4 flex gap-40 justify-center"  id='join-us'>
 
-    <div className="text-white
-                        text-5xl
-                        font-bold
-                        uppercase;
-                        relative">
+    <div className="text-white text-5xl font-bold uppercase relative">
 
-        <hr className="absolute
-                        w-40
-                        rounded-sm
-                        border-radius: 20%;
-                        margin:-10px 0" />
+        <hr className="absolute w-40 rounded-sm bg-[#f48915] !mx-2.5" />
 
-        <div className="flex;
-                            gap-4">
+        <div className="flex gap-4">
                                 <span className='font-outline-2 text-transparent'>Ready to</span>
                                 <span>Level up</span>
                                 </div>
-        <div className="flex
-                            gap-4">
+        <div className="flex gap-4">
                                 <span>your body</span>
                                 <span className='font-outline-2 text-transparent'>with us?</span>
                                 </div>
     </div>
-    <div className="flex
-                        text-center
-                        items-end">
-        <form className="flex
-                            gap-12
-                            bg-[#717070]
-                            padding: 1rem 2rem;" onSubmit={handleJoin}>  
-            <input className="bg-transparent
-                                rounded-none
-                                text-[#777777]" 
-                                type="email" name='user_email' placeholder='Enter your Email Address here...'/>
+    <div className="flex text-center items-end">
+        <form className="flex gap-12 bg-[#717070] px-[1rem] py-[2rem]" onSubmit={handleJoin}>  
+            <input className="bg-transparent rounded-none text-[#777777]" type="email" name='user_email' placeholder='Enter your Email Address here...'/>
             <button type='submit' 
-            className="btn 
-                bg-[orange];
-                text-white">Join now</button>
+            className="p-2
+            font-bold
+            border: 4px solid transparent;
+            transition-all duration-300
+            flex
+            items-center
+            justify-center 
+            w-32 bg-[#f79c3b] text-white">Join now</button>
         </form>
     </div>
    </div>

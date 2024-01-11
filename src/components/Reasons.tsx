@@ -10,9 +10,9 @@ import tick from "../assets/tick.png";
 // import "./Reasons.css";
 const Reasons = () => {
   return (
-    <div className="p-4 flex gap-8" id='reasons'>
-      <div className="flex-1 grid grid-rows-3 grid-flow-col gap-1">
-        <img className="object-cover w-48 row-span-3 h-96" src={`${image1.src}`} alt="" />
+    <div className="!mt-16 p-4 flex gap-8" id='reasons'>
+      <div className="flex-1 grid  grid-flow-col gap-1">
+        <img className="object-cover w-48 row-span-3 h-[28rem]" src={`${image1.src}`} alt="" />
         <img className="object-cover col-span-3 w-auto h-64" src={`${image2.src}`} alt="" />
         <img className="object-cover row-span-2 col-span-1 w-56" src={`${image3.src}`} alt="" />
         <img className="object-cover row-span-2 col-span-1 w-40 h-44" src={`${image4.src}`} alt="" />

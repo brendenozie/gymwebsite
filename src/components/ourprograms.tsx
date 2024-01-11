@@ -11,7 +11,7 @@ const OurPrograms = () => {
       <div className="flex
                         flex-col
                         gap-8
-                        p-x-8" 
+                        px-8" 
                         id='programs'>
 
       {/* programs header */}
@@ -19,7 +19,7 @@ const OurPrograms = () => {
                         gap-20
                         font-bold
                         text-5xl
-                        justify-content: center;
+                        justify-center
                         text-white
                         uppercase
                         italic">
@@ -32,7 +32,7 @@ const OurPrograms = () => {
       <div className="flex gap-4">
       {programsData.map((program)=>(
           <motion.div
-          whileHover={{background: 'var(--planCard)', cursor: 'pointer'}}
+          whileHover={{background: 'bg-gradient-to-r from-[#fa5042] to-[#ffa739]', cursor: 'pointer'}}
           transition={{type: 'spring'}}
           className="flex
                       flex-col

@@ -9,7 +9,7 @@ const Testimonials = () => {
   const tLength = testimonialsData.length;
   const transition = { type: "spring", duration: 1 };
   return (
-    <div className="flex gap-[1rem] p-x-[2rem]">
+    <div className="!mt-16 flex gap-[1rem] px-[2rem]">
       <div className="flex flex-1 gap-[2rem] flex-col uppercase text-white">
         <span className="text-[#ff6200] font-bold">Testimonials</span>
         <span className="font-outline-2 text-transparent font-bold text-5xl ">What they</span>
@@ -32,15 +32,21 @@ const Testimonials = () => {
         </span>
       </div>
       <div className="flex-1 relative">
+      {/* position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid orange;
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem; */}
         <motion.div
-          className="absolute w-[17] h-[20rem] rounded-sm border-yellow-700 bg-transparent right-[9rem] top-[0.9rem]"
+          className="absolute w-[17rem] h-[20rem] border-2 rounded-none border-[#ffa500] bg-transparent right-36 top-4"
           initial={{ opacity: 0, x: -100 }}
           transition={{ ...transition, duration: 2 }}
           whileInView={{ opacity: 1, x: 0 }}
         ></motion.div>
         <motion.div
-        className="absolute w-[17rem] h-[19rem] right-[7rem] top-[4rem] bg-gradient-to-r from-[#fa5042] to-[#ffa739]
-        bg-[linear-gradient(210.41deg, #fa5042 1.14%, #ffa739 100.75%)]"
+        className="absolute w-[17rem] h-[19rem] right-[7rem] top-[4rem] bg-gradient-to-r from-[#fa5042] to-[#ffa739]"
           initial={{ opacity: 0, x: 100 }}
           transition={{ ...transition, duration: 2 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -60,20 +66,12 @@ const Testimonials = () => {
             className="w-[1.5rem] cursor-pointer"
             src={leftArrow.src}
             alt=""
-            onClick={() => {
-              selected === 0
-                ? setSelected(tLength - 1)
-                : setSelected((prev) => prev - 1);
-            }}
+            onClick={() => {selected === 0  ? setSelected(tLength - 1) : setSelected((prev) => prev - 1); }}
           />{" "}
           <img className="w-[1.5rem] cursor-pointer"
             src={rightArrow.src}
             alt=""
-            onClick={() => {
-              selected === tLength - 1
-                ? setSelected(0)
-                : setSelected((prev) => prev + 1);
-            }}
+            onClick={() => {selected === tLength - 1 ? setSelected(0) : setSelected((prev) => prev + 1);  }}
           />
         </div>
       </div>

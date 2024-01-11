@@ -187,11 +187,11 @@ const Banner = ({  }: Props) => {
           whileInView={{ right: "20rem" }}
           transition={transition}
           className="absolute
-                      top-0
+                      top-16
                       right-80
-                      -z-[10]
+                      -z-10
                       w-60"
-          src={`${hero_image_back}`}
+          src={`${hero_image_back.src}`}
           alt=""
         />
 

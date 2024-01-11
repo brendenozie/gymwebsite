@@ -14,7 +14,7 @@ const MainLayout = (props: PropsWithChildren) => {
   const [searchInput, setSearchInput] = useState("");
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <div className="bg-hero-pattern bg-[#3c3f45] mix-blend-overlay flex flex-col gap-24 overflow-y-scroll no-scrollbar">
+    <div className="bg-hero-pattern bg-[#3c3f45] mix-blend-overlay flex flex-col gap-24 overflow-y-scroll no-scrollbar ">
       <Head>
         <title>Beyond Physique</title>
         <link rel="icon" href="/favicon.ico" />
